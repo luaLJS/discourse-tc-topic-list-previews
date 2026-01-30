@@ -1,7 +1,7 @@
 import { htmlSafe } from "@ember/template";
 import { apiInitializer } from "discourse/lib/api";
-import loadScript from "discourse/lib/load-script";
 import { getURLWithCDN } from "discourse/lib/get-url";
+import loadScript from "discourse/lib/load-script";
 import { resizeAllGridItems } from "../lib/gridupdate";
 import PreviewsDetails from "./../components/previews-details";
 import PreviewsThumbnail from "./../components/previews-thumbnail";
