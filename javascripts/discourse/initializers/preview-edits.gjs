@@ -1,5 +1,6 @@
 import { htmlSafe } from "@ember/template";
 import { apiInitializer } from "discourse/lib/api";
+import { getURLWithCDN } from "discourse/lib/get-url";
 import loadScript from "discourse/lib/load-script";
 import { resizeAllGridItems } from "../lib/gridupdate";
 import PreviewsDetails from "./../components/previews-details";
@@ -23,7 +24,7 @@ export default apiInitializer("0.8", (api) => {
   );
 
   api.onPageChange(() => {
-    loadScript(settings.theme_uploads.imagesloaded).then(() => {
+    loadScript(getURLWithCDN(settings.theme_uploads.imagesloaded)).then(() => {
       if (document.querySelector(".tiles-style")) {
         //eslint-disable-next-line no-undef
         imagesLoaded(
