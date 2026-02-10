@@ -51,3 +51,16 @@ td .main-link {
     }
   }
 }
+
+.tlp-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.tlp-author__name {
+  opacity: 0.85;
+  font-size: 0.9em;
+}
+
