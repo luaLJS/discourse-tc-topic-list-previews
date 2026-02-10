@@ -741,3 +741,9 @@ img.select-thumbnail-preview {
     }
   }
 }
+
+/* por padrão (desktop), não mostra o autor */
+.tlp-author {
+  display: none;
+}
+
