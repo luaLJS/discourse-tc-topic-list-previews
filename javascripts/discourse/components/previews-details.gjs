@@ -4,11 +4,6 @@ import PreviewsFooter from "./details/previews-footer";
 import PreviewsAuthor from "./details/previews-author";
 import { inject as service } from "@ember/service";
 
-export default class extends Component {
-  @service site;
-}
-
-
 <template>
   <div class="topic-details">
     {{#if this.site.mobileView}}
