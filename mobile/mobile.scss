@@ -65,3 +65,19 @@ td .main-link {
 }
 
 
+/* TESTE: se existir .tlp-author no HTML, isso vai aparecer MUITO no mobile */
+.tlp-author {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px !important;
+  margin: 8px 0 !important;
+  outline: 3px solid lime !important;
+  background: rgba(0, 255, 0, 0.08) !important;
+}
+
+.tlp-author__name::after {
+  content: "  (TESTE AUTHOR)" !important;
+}
+
+
