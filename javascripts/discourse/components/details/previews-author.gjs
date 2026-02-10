@@ -1,8 +1,8 @@
-import { inject as service } from "@ember/service";
+import UserAvatar from "discourse/components/user-avatar";
 
 <template>
   <div class="tlp-author">
-    {{avatar @topic.creator imageSize="tiny"}}
+    <UserAvatar @user={{@topic.creator}} @size="tiny" />
     <span class="tlp-author__name">@{{@topic.creator.username}}</span>
   </div>
 </template>
